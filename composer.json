@@ -1,0 +1,28 @@
+{
+    "name": "lichi/pyaterochka-sdk",
+    "type": "library",
+    "description": "SDK for pyaterochka company",
+    "keywords": ["Lichi","lichi", "Pyaterochka SDK", "pyaterochka sdk", "pyaterochka-sdk"],
+    "homepage": "https://github.com/IvanHunters/pyaterochka-sdk",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Okhotnikov",
+            "email": "ohotnikovivan@yandex.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "guzzlehttp/guzzle": "~6",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lichi\\Pyaterochka\\": "src/",
+            "Lichi\\Pyaterochka\\Sdk\\": "src/sdk/"
+        }
+    }
+}
