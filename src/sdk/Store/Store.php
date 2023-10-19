@@ -30,12 +30,12 @@ class Store extends Module
         return $this;
     }
 
-    public function getStoreId(): string
+    public function getStoreId(): ?string
     {
         return @$this->store['sap_code'];
     }
 
-    public function getStoreAddress(): string
+    public function getStoreAddress(): ?string
     {
         return @$this->store['shop_address'];
     }
